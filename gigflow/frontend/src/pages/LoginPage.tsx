@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { authApi } from '../../api/auth.api';
-import { useAuth } from '../../context/AuthContext';
-import { LoginForm } from '../../types';
+import { authApi } from '../api/auth.api';
+import { useAuth } from '../context/AuthContext';
+import { LoginForm } from '../types';
 import toast from 'react-hot-toast';
-import { ButtonSpinner } from '../../components/ui/Spinner';
+import { ButtonSpinner } from '../components/ui/Spinner';
 
 const LoginPage = () => {
   const { login } = useAuth();
