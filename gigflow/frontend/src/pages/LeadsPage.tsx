@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Plus, Download } from 'lucide-react';
-import DashboardLayout from '../../components/layout/DashboardLayout';
-import LeadsTable from '../../components/leads/LeadsTable';
-import LeadFiltersBar from '../../components/leads/LeadFiltersBar';
-import LeadFormModal from '../../components/leads/LeadFormModal';
-import Pagination from '../../components/ui/Pagination';
-import { PageLoader } from '../../components/ui/Spinner';
-import { useLeads } from '../../hooks/useLeads';
-import { Lead } from '../../types';
+import DashboardLayout from '../components/layout/DashboardLayout';
+import LeadsTable from '../components/leads/LeadsTable';
+import LeadFiltersBar from '../components/leads/LeadFiltersBar';
+import LeadFormModal from '../components/leads/LeadFormModal';
+import Pagination from '../components/ui/Pagination';
+import { PageLoader } from '../components/ui/Spinner';
+import { useLeads } from '../hooks/useLeads';
+import { Lead } from '../types';
 
 const LeadsPage = () => {
   const { leads, meta, filters, isLoading, error, updateFilters, setPage, resetFilters, deleteLead, exportCSV, refetch } = useLeads();
