@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Users, TrendingUp, Target, XCircle } from 'lucide-react';
-import DashboardLayout from '../../components/layout/DashboardLayout';
-import { LeadStats } from '../../types';
-import { leadsApi } from '../../api/leads.api';
-import { PageLoader } from '../../components/ui/Spinner';
-import { useAuth } from '../../context/AuthContext';
+import DashboardLayout from '../components/layout/DashboardLayout';
+import { LeadStats } from '../types';
+import { leadsApi } from '../api/leads.api';
+import { PageLoader } from '../components/ui/Spinner';
+import { useAuth } from '../context/AuthContext';
 
 const StatCard = ({
   icon, label, value, color,
